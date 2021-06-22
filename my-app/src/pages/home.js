@@ -2,7 +2,7 @@ function Home() {
     return (
   
       <div>
-          <p className='text-lg font-black'>Hello</p>
+          <p className='text-lg font-black'>Hello Hamza</p>
       </div>   
    
     );
