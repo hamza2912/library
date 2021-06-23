@@ -1,12 +1,20 @@
+import Sidebar from '../components/sidebar'
+
 function Home() {
     return (
-  
-      <div className='flex lg:flex-row justify-around pt-10 sm:flex-col sm:items-center'>
-            <p>Hamza</p>
-            <p>Aziz haider asli</p>
-            <p>Aziz</p>
-            <p>Aziz</p>
-      </div>   
+      
+      <div>
+        <Sidebar />
+        {/* Main Screen */}
+        <div className='flex flex-row w-full h-screen pt-8'>
+          <div className='w-2/3 pl-20'>
+            <p>Hello</p>
+          </div>
+          <div className='w-1/3 flex justify-start items-center'>
+            <img className='w-full h-auto' src="big-logo.png" alt="JT Logo Big" />
+          </div>
+        </div>
+      </div> 
    
     );
   }

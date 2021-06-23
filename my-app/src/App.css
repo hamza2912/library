@@ -28,6 +28,76 @@
   color: #61dafb;
 }
 
+.bg-sidebar{
+  background-color: #2F3A88;
+}
+
+.link-home:hover::after {
+  content: "Home";
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.link-about:hover::after {
+  content: "About Us";
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.link-events:hover::after {
+  content: "Events";
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.link-services:hover::after {
+  content: "Services";
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 7px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.link-view:hover::after {
+  content: "360 View";
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
