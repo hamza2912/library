@@ -28,8 +28,24 @@
   color: #61dafb;
 }
 
-.bg-sidebar{
+.bg-blue{
   background-color: #2F3A88;
+}
+
+.bg-search{
+  background-color: #F0EEEE;
+}
+
+.bg-orange{
+  background-color: #F29D3A;
+}
+
+.text-blue{
+  color: #2F3A88;
+}
+
+.h-video{
+  height: 18rem;
 }
 
 .link-home:hover::after {
@@ -45,7 +61,8 @@
 }
 
 .link-about:hover::after {
-  content: "About Us";
+  content: "About us";
+  width: fit-content;
   position: absolute;
   font-size: 12px;
   color: white;
@@ -86,6 +103,7 @@
 .link-view:hover::after {
   content: "360 View";
   position: absolute;
+  width: fit-content;
   font-size: 12px;
   color: white;
   margin-left: 10px;
