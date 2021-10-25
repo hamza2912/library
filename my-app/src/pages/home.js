@@ -129,7 +129,7 @@ function Home() {
 
               {/* best Seller */}
               <div id='mb-about'>
-                <p className='lg:mt-10 mb-4 text-center lg:text-left'>Best Seller Books</p> 
+                <p className='lg:mt-10 mb-4 text-center lg:text-left'>Top Rated Books</p> 
                 <OwlCarousel className='owl-theme best-seller-carousel w-full mx-auto' loop={true} margin={20} items={4} nav={true} 
                   autoplay={true} responsive={bestSeller_responsive} autoWidth={true}>
                   {/* {
@@ -151,19 +151,19 @@ function Home() {
           {/* About US */}
           <div id='about' className='w-full lg:mt-8 mt-2 lg:pl-40 lg:pr-32 pl-8 pr-6 py-12 bg-search'>
             <h2 className='text-center lg:text-4xl text-lg font-medium mb-5'>About Us</h2>
-            <OwlCarousel className='owl-theme best-seller-carousel w-full mx-auto' loop={true} autoplay={true} autoplayTimeout={10000}
+            <OwlCarousel className='owl-theme best-seller-carousel w-full mx-auto' loop={true} autoplay={true} autoplayTimeout={20000}
               margin={5} items={1} nav={true}>
-              <About title="1st Inauguration" details="جعفر طیا ر لابئریری جوکہ انوارالقرآن کا ذیلی ادارہ ہے  کاقیام 13 رجب 1437 ھجری کو تقریبا 800 کتابوں کے ساتھ حجۃ الاسلام مولانا ڈاکٹر سید نسیم حیدر زیدی صاحب کی زیر سرپرستی مرکزی مسجد کے ذیلی حصے میں واقع ایک چھوٹے سے کمرے میں عمل میں آیا ۔" 
+              <About title="1st Inauguration" details="جعفرطیار لابئریری جو انوارالقرآن اکیڈمی کا ذیلی ادارہ ہے جس کا قیام 13 رجب 1437 ھجری کو تقریبا 800 کتابوں کے ساتھ حجۃ الاسلام مولانا ڈاکٹر سید نسیم حیدر زیدی صاحب کی زیر سرپرستی مرکزی مسجد کے ذیلی حصے میں واقع ایک چھوٹے سے کمرے میں عمل میں آیا ۔" 
                       imageUrl="./aboutUs/about1a.jpg" imageUrl2="./aboutUs/about1b.jpeg" />
-              <About title="2nd Inauguration" details="لوڈشیڈنگ اور گھروں میں کتاب بینی میں حائل دیگر مشکلات کو پیش نظر رکھتے ہوئے مولانا ڈاکٹر سید نسیم حیدرزیدی کی تجویز پر طلباء کو مطالعے کا بہتر اور پُرسکون ماحول فراہم کرنے کے لیے مسجد کی بالائی منزل پرمطالعہ ہال بنانے کا فیصلہ کیا گیا۔
-چنانچہ ایک سال کے بعد ولادتِ مولاعلیؑ کے پر مسرت موقع پر 13 رجب 1438 ہجری کو اس فیصلے پر عملدرآمد کرتے ہوئے مرکزی مسجد کی بالائی منزل پر مطالعے کے لیے بہترین سہولیات سے آراستہ وسیع ہال کا افتتاح کیا گیا۔ مطالعہ ہال میں طلباء کی دلچسپی دیکھنے سے تعلق رکھتی تھی طلبہ کے غیر معمولی ذوق و شوق اور بڑھتی ہوئی تعداد  کے باعث موجود کرسیاں ناکافی ثابت ہوئیں جس کی وجہ سے ان کو قالین پر بیٹھنا پڑا۔" 
+              <About title="2nd Inauguration" details="لوڈشیڈنگ اور گھروں میں کتاب بینی میں حائل دیگر مشکلات کو پیش نظر رکھتے ہوئے مولانا ڈاکٹر سید نسیم حیدر زیدی کی تجویز پر طلبا کو مطالعے کا بہتر اور پُرسکون ماحول فراہم کرنے کے لیے مسجد کی بالائی منزل پرمطالعہ ہال بنانے کا فیصلہ کیا گیا۔
+چنانچہ ایک سال کے بعد یوم ولادتِ مولاعلیؑ کے پر مسرت موقعے پر 13 رجب 1438 ہجری کو اس فیصلے پر عملدرآمد کرتے ہوئے مرکزی مسجد کی بالائی منزل پر مطالعے کے لیے بہترین سہولیات سے آراستہ وسیع ہال کا افتتاح کیا گیا۔
+مطالعہ ہال میں طلبا کی دلچسپی دیکھنے سے تعلق رکھتی تھی طلبا کے غیر معمولی ذوق و شوق اور بڑھتی ہوئی تعداد  کے باعث موجود کرسیاں ناکافی ثابت ہوئیں تاہم طلبا کے لئے فرشی نشست کا بھی انتظام کیا گیا تھا۔" 
                       
                       imageUrl="./aboutUs/about2a.jpg" imageUrl2="./aboutUs/about2b.jpg" />
-              <About title="3rd Inauguration" details="کچھ ہی عرصے میں اندازہ ہوگیا کہ مطالعہ ہال ناکافی ثابت ہورہا ہے اوراسکے علاوہ مسجد میں طالبات کے لیے سہولت نہ ہونے کے باعث ان کو مطالعہ ہال سے استفادہ کرنے میں مشکلات سے سابقہ پیش آرہا ہے چنانچہ ایک بار پھر جعفر طیار لائبریری 13 رجب 1439 کو مرکزی سڑک پر نسبتاً ایک بہتر اور بڑی جگہ پر منتقل کردی گئی جہاں پرلائبریری کے اوقات با لترتیب یوں تھے صبح 9 بجے سے 2 بجے تک طالبات اور 4 بجے سے شب 11 بجے تک طلباء کے لیے اوقاتِ کار مقرر کیے گئے.
- نئی عمارت میں منتقلی کے بعد جعفر طیار لائبریری نے متعدد پروجیکٹ کا آغاز کیا ۔" 
-                      imageUrl="./aboutUs/about3b.jpg" imageUrl2="./aboutUs/about3a.jpg" />
-              <About title="4th Inauguration" details="ر10 رجب1442ہجری کے مبا رک دن جعفرطیار لائبریری اپنی ذاتی نئی عمارت میں منتقل ہو گئی ہے. جعفر طیار لائبریری کی نئی عمارت کو جدید سہولیا ت سے آراستہ کر کے بنایا گیا ہے جو کہ فن تعمیر  کا بھی ایک  خوبصورت نمونہ ہے۔" 
-                      imageUrl="./events/event4.jpg" imageUrl2="./events/event5.jpg" />
+              <About title="3rd Inauguration" details="جعفرطیار لائبریری کی انتظامیہ کو کچھ ہی عرصے میں اندازہ ہوگیا کہ مطالعہ ہال ناکافی ثابت ہورہا ہے اور اسکے علاوہ مسجد میں طالبات کے لیے سہولت نہ ہونے کے باعث ان کو مطالعہ ہال سے استفادہ کرنے میں مشکلات درپیش ہیں، چنانچہ ایک بار پھر جعفر طیار لائبریری 13 رجب 1439 کو مرکزی سڑک پر نسبتاً ایک بہتر اور بڑی جگہ پر منتقل کردی گئی جہاں پر لائبریری کے اوقات بالترتیب یوں تھے صبح 9 بجے سے 2 بجے تک طالبات اور 4 بجے سے شب 11 بجے تک طلبا کے لیے اوقاتِ کار مقرر کیے گئے." 
+                      imageUrl="./aboutUs/about3b.jpg" imageUrl2="./aboutUs/about3bw.jpeg" />
+              <About title="4th Inauguration" details="۔10 رجب 1442 ہجری کے مبارک دن جعفرطیار لائبریری اپنی نئی عمارت میں منتقل ہو گئی ہے. جعفر طیار لائبریری کی نئی عمارت جدید سہولیات سے آراستہ ہے اور فن تعمیر  کا بھی ایک بہترین نمونہ ہے۔" 
+                      imageUrl="./aboutUs/about4a.jpeg" imageUrl2="./aboutUs/about4.jpeg" />
             </OwlCarousel>
           </div>
           
@@ -214,94 +214,3 @@ function Home() {
   }
   
 export default Home;
-
-
-
-
-
-
-
-
-/* <iframe className='w-full h-full rounded-lg' src="http://www.youtube.com/embed/dugft2TPdn4?rel=0&autoplay=1&mute=1" allow='autoplay; encrypted-media' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */
-
-/* <div className='absolute text-black bg-black w-full bg-opacity-75 p-1 rounded-tr-lg rounded-tl-lg'>
-                    <p className='mb-2'>Upcoming Event</p>
-                  </div> */
-
-
-{/* <div className='w-1/2 flex justify-center relative'>
-              <img class='w-3/5 h-about' src="events/event1.png" alt="" />
-              <img class='w-3/5 h-about absolute img-about' src="events/event1.png" alt="" />
-            </div> */}
-
-{/* <div className='flex w-full justify-center'>
-                  <button className='mt-5 mx-auto bg-orange rounded-lg p-2 text-white text-xs focus:outline-none'>Browse the library</button>     
-                </div> */}
-
-
-{/* <div className='pl-40 w-full my-8 flex flex-row'>
-            <div className='w-1/2 flex flex-col'>
-              <div>
-                <h2 className='text-4xl font-medium'>About Us</h2>
-                <p className='w-4/5 mt-2'>Our ready-made lesson plans make it easy for classroom educators 
-                  and homeschoolers to provide meaningful instruction to students. Our ready-made lesson plans make it easy for 
-                  classroom educators and homeschoolers to provide meaningful instruction to students. Our ready-made lesson plans 
-                  make it easy for 
-                  classroom educators and homeschoolers to provide meaningful instruction to students</p>
-                <button className='w-1/4 mt-5 bg-orange rounded-lg p-2 text-white text-xs focus:outline-none'>Browse the library</button>
-              </div>
-            </div>      
-          </div> */}
-
-{/* <div id='about' className='w-full my-8 pl-40 pr-32'>
-              <div>
-                <h2 className='font-serif italic text-quote text-start -mb-12'>"</h2>
-              </div>
-                <h2 className='text-center text-4xl font-medium'>About Us</h2>
-                <p className='text-center mt-2'>Our ready-made lesson plans make it easy for classroom educators 
-                  and homeschoolers to provide meaningful instruction to students. Our ready-made lesson plans make it easy for 
-                  classroom educators and homeschoolers to provide meaningful instruction to students. Our ready-made lesson plans 
-                  make it easy for 
-                  classroom educators and homeschoolers to provide meaningful instruction to students</p>
-                <div className='flex justify-end'>
-                < h2 className='font-serif italic text-quote text-end -mt-2'>"</h2>
-              </div>
-          </div> */}
-
-
-{/* <div class="item">
-                        <Service name='Games' icon='fa-gamepad bg-orange' description='Our ready-made lesson plans make it easy for classroom educators 
-                          and homeschoolers to provide meaningful instruction to students.'/>
-                      </div>
-                      <div class="item">
-                        <Service name='Activites' icon='fa-radiation bg-pink-400' description='Our ready-made lesson plans make it easy for classroom educators 
-                          and homeschoolers to provide meaningful instruction to students.'/>
-                      </div>
-                      <div class="item">
-                        <Service name='Learning' icon='fa-hands-helping bg-red-400' description='Our ready-made lesson plans make it easy for classroom educators 
-                          and homeschoolers to provide meaningful instruction to students.'/>
-                      </div>
-                      <div class="item">
-                        <Service name='Education' icon='fa-university bg-blue-400' description='Our ready-made lesson plans make it easy for classroom educators 
-                          and homeschoolers to provide meaningful instruction to students.'/>
-                      </div> */}
-
-
-{/* <Event imageUrl='./events/event1.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/>
-              <Event imageUrl='./events/event2.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/>
-              <Event imageUrl='./events/event3.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/>
-              <Event imageUrl='./events/event1.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/>
-              <Event imageUrl='./events/event2.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/>
-              <Event imageUrl='./events/event3.png' title='Seminar Writing' description='Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididun.'/> */}
-
-
-{/* Mid carousel */}
-          {/* <div className='w-full h-video overflow-hidden bg-image'>
-            <img className='object-fill bg-fixed w-full h-auto rounded-t-lg' src='./events/event6.jpg' alt="" />
-          </div> */}

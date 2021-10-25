@@ -7,10 +7,12 @@ function View() {
   
         <div>
             <Sidebar />
-            <div className='w-full h-auto'>
-                <iframe className='w-full h-auto' 
+            <div className='w-full h-auto pl-20'>
+                <div id="fyu_yij7jh7rg7" class="fy_auto"></div>
+                
+                {/* <iframe className='w-full h-auto' 
                 src="https://momento360.com/e/u/c4788bb8295b4463b5315195434a1dd9?utm_campaign=embed&utm_source=other&heading=99.86&pitch=-8.57&field-of-view=75&size=medium" frameborder="0">                    
-                </iframe>
+                </iframe> */}
             </div>
             <Footer />
         </div>

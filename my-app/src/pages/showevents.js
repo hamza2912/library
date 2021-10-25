@@ -87,7 +87,7 @@ function ShowEvents() {
                     </div>
                     <div ref={courses} onClick={() => setEventType("courses")} className='p-2 cursor-pointer flex flex-row justify-center items-center bg-white shadow-sm hover:shadow-lg rounded-lg'>
                         <i class="fas fa-chalkboard text-blue-400"></i>
-                        <p className='ml-2 text-xs lg:text-sm'>Courses</p>
+                        <p className='ml-2 text-xs lg:text-sm'>Workshops</p>
                     </div>
                     <div ref={competition} onClick={() => setEventType("competition")} className='p-2 cursor-pointer flex flex-row justify-center items-center bg-white shadow-sm hover:shadow-lg rounded-lg'>
                         <i class="fas fa-trophy text-yellow-400"></i>

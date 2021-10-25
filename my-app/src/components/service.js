@@ -11,7 +11,7 @@ function Service( props ) {
              </div>
             <div className='flex flex-col pl-5'>
                 <p className='font-medium'>{name}</p>
-                <p className='text-sm my-2'>{description}</p>
+                <p className='text-base my-2 font-jameel'>{description}</p>
                 {/* <button className='w-full bg-blue rounded-lg p-2 text-white text-xs focus:outline-none'>Browse the library</button> */}
             </div>
         </div>

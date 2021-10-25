@@ -9,7 +9,7 @@ function About( props ) {
               <h2 className='text-center lg:text-2xl text-lg font-medium'>{title}</h2>
               <div className='lg:w-4/5 w-full mx-auto'>
                 <h2 className='font-serif italic text-quote text-orange text-start -mb-12'>"</h2>
-                <p className='text-center mt-2 text-sm lg:text-base text-justify'>{details}</p>
+                <p className='text-center mt-2 text-lg lg:text-xl font-jameel'>{details}</p>
                 <div className='flex justify-end'>
                   < h2 className='font-serif italic text-quote text-orange text-end -mt-2'>"</h2>
                 </div>

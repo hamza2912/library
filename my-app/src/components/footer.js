@@ -13,36 +13,39 @@ function Footer() {
                 {/* <i className='fas fa-home'></i>  */}
                 {/* <i className='fas fa-envelope'></i> */}
                 <div className='w-4/5 lg:text-left text-center'>
-                  <p>B-124/104 HAsnain Society Block 13 JTCHS Malir Karachi</p>
-                  <p>Email: jt-library@gmail.com</p>
-                  <p><i className='fab fa-whatsapp'></i>  +923361294719824</p>
+                  <p>B-7/331 Near Ghazi Chowk Jaffar Tayyar Society Malir Karachi</p>
+                  <p>Email: jaffartayyarlibrary@outlook.com</p>
+                  <p><i className='fab fa-whatsapp'></i>  +923172486365</p>
                 </div>
               </div>
               <div class='lg:w-1/4 w-full text-center flex flex-col hidden lg:block'>
                 <p className='font-medium mb-3 mt-5'>Services</p>
-                <a href=""><p>Education</p></a>
-                <a href=""><p>Learning</p></a>
-                <a href=""><p>Quiz</p></a>
+                <a href="/#about"><p>About Us</p></a>
+                <a href="/#services"><p>Offerings</p></a>
+                <a href="/publications"><p>Publications</p></a>
+                {/* <a href="/view"><p>360 View</p></a> */}
+                <a href="/publications#whatsapp-groups"><p>Whatsapp Groups</p></a>
+                <a href="/onlinepdf"><p>Online PDFs</p></a>
               </div>
               <div class='lg:w-1/4 w-full text-center flex flex-col hidden lg:block'>
                 <p className='font-medium mb-3 mt-5'>Events</p>
-                <a href=""><p>Education</p></a>
-                <a href=""><p>Learning</p></a>
-                <a href=""><p>Quiz</p></a>
+                <a href="/events"><p>Competitions</p></a>
+                <a href="/events"><p>Book Stalls</p></a>
+                <a href="/events"><p>Seminars</p></a>
+                <a href="/events"><p>Courses</p></a>
               </div>
               <div class='lg:w-1/4 w-full text-center flex flex-col items-center lg:items-start mt-4 lg:mt-0'>
                 {/* <p className='font-medium mb-3 mt-5'>Events</p> */}
                 <div className='flex flex-row text-2xl mt-2'>
-                    <a href=""><i class="fab fa-facebook mr-2"></i></a> 
-                    <a href=""><i class="fab fa-instagram mr-2"></i></a>
-                    <a href=""><i class="fab fa-twitter mr-2"></i></a>
-                    <a href=""><i class="fab fa-telegram mr-2"></i></a>  
+                    <a target="_blank" href="https://www.facebook.com/Jaffaretayyarlibraryofficial"><i class="fab fa-facebook mr-2"></i></a> 
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=923172486365"><i class="fab fa-whatsapp mr-2"></i></a>
+                    <a href="mailto:jaffartayyarlibrary@outlook.com"><i class="fas fa-envelope mr-2"></i></a>
                   </div>
                 <div className='w-3/5 bg-white border-2 cursor-pointer shadow-lg mt-4'>
                   <div className='relative pl-2 pr-8 py-2'>
                     <p className='text-xs text-gray-700'>Subscribe now</p>
                     <div className='w-1/5 h-full bg-pink-400 absolute top-0 right-0 flex justify-center items-center'>
-                        <a className='' href=""><i class="fas fa-envelope text-white text-sm"></i></a>
+                        <a className=''><i class="fas fa-envelope text-white text-sm"></i></a>
                     </div>
                   </div>
                 </div>

@@ -46,7 +46,7 @@ export default function GetData ( type ) {
             });
         } 
         if (type === 'showevents' || type === 'showallevents' || type === 'showSeminar' || type === 'showcourses' || type === 'showCompet' || type === 'book-stalls' ){
-            firebase.database().ref('events/past/').on('value', (snapshot) => {
+            firebase.database().ref('allEvents/').on('value', (snapshot) => {
                 setmydata(snapshot.val());
             });
         }
@@ -63,6 +63,13 @@ export default function GetData ( type ) {
         if (type === 'khudshanasi'){
             firebase.database().ref('books/publications/khudshinasi/').on('value', (snapshot) => {
                 setmydata(snapshot.val());
+                history.push('/publications');
+            });
+        }
+        if (type === 'kitabShanasi'){
+            firebase.database().ref('books/publications/kitabShanasi/').on('value', (snapshot) => {
+                setmydata(snapshot.val());
+                history.push('/publications');
             });
         }     
     }, []);
@@ -133,14 +140,17 @@ export default function GetData ( type ) {
         var showevents = []
 
         let sortedmydata = mydata.sort((a, b) => (a.id < b.id ? 1 : -1));
+        console.log(sortedmydata);
 
-        sortedmydata.forEach((item) => {
-            showevents.push(
-            <div class="item">
-                <Event imageUrl={item.imageUrl} title={item.name} description={item.description}/>
-            </div>
-            )
-        })
+        if(sortedmydata.length > 1){
+            for (let index = 0; index < 6; index++) {
+                showevents.push(
+                    <div class="item">
+                        <Event imageUrl={sortedmydata[index].imageUrl} title={sortedmydata[index].name} description={sortedmydata[index].description}/>
+                    </div>
+                )
+            }
+        }
 
         return showevents;
     }
@@ -235,7 +245,7 @@ export default function GetData ( type ) {
         mydata.forEach((item) => {
             news.push(
             <div class="item mx-auto">
-                <Book name={item.title} imageUrl={item.imageUrl} css='flex flex-col w-auto items-center text-center' />
+                <Book url={item.url} name={item.title} imageUrl={item.imageUrl} css='flex flex-col w-auto items-center text-center' />
             </div>
             )
         })
@@ -250,12 +260,27 @@ export default function GetData ( type ) {
         mydata.forEach((item) => {
             khudshanasi.push(
             <div class="item mx-auto">
-                <Book name={item.title} imageUrl={item.imageUrl} css='flex flex-col w-auto items-center text-center' />
+                <Book url={item.url} name={item.title} imageUrl={item.imageUrl} css='flex flex-col w-auto items-center text-center' />
             </div>
             )
         })
 
         return khudshanasi;
+    }
+
+    if ( type === 'kitabShanasi') {
+
+        var kitabShanasi = []
+
+        mydata.forEach((item) => {
+            kitabShanasi.push(
+            <div class="item mx-auto">
+                <Book url={item.url} name={item.title} imageUrl={item.imageUrl} css='flex flex-col w-auto items-center text-center' />
+            </div>
+            )
+        })
+
+        return kitabShanasi;
     }
 
 };

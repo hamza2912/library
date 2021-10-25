@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import ShowEvents from './pages/showevents';
 import Publications from './pages/publications';
 import View from './pages/view';
+import Onlinepdf from './pages/onlinepdf';
 import './firebase';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/events" component={ShowEvents} />
       <Route path="/publications" component={Publications} />
       <Route path="/view" component={View} />
+      <Route path="/onlinepdf" component={Onlinepdf} />
       <Route path="/" component={Home} />
 
       </Switch>

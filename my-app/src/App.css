@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq';
+  src: url('/src/fonts/JameelNooriNastaleeq.woff2') format('woff2'),
+      url('/src/fonts/JameelNooriNastaleeq.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.font-jameel{
+  font-family: 'Jameel Noori Nastaleeq';
 }
 
 .App {
@@ -18,7 +31,7 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: hsl(220, 13%, 18%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -140,7 +153,21 @@ html {
 }
 
 .link-publications:hover::after {
-  content: "Publications";
+  content: "Publications and Groups";
+  position: absolute;
+  width: fit-content;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: #FF8C8C;
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+.link-pdf:hover::after{
+  content: "Online PDFs";
   position: absolute;
   width: fit-content;
   font-size: 12px;
@@ -164,10 +191,23 @@ html {
   right: 5px;
 }
 
+.fy_h16x9, .fy_h4x3 {
+  max-width: 100% !important;
+}
+
+.h-events{
+  height: 16rem !important;
+}
+
 @media only screen and (max-width: 1000px) {
   .text-xxs{
     font-size: 8px;
   }
+
+  .h-events{
+    height: 8rem !important;
+  }
+
 }
 
 
@@ -188,8 +228,9 @@ html {
 }
 
 .slidedown {            
-  max-height: 200px ;                    
+  max-height: 300px ;                    
 } 
+
 
 
 @keyframes App-logo-spin {
