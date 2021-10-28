@@ -91,7 +91,7 @@ function Home() {
 
               {/* video */}
               <div className='w-full h-auto rounded-lg bg-black relative'>
-                <video className='w-full h-auto rounded-lg' autoplay="autoplay" muted x-webkit-airplay="allow">
+                <video className='w-full h-auto rounded-lg' loop autoplay="autoplay" muted x-webkit-airplay="allow">
                   <source src="./videos/jt_video.mp4" type="video/mp4"/>
                 </video>
                 <div className='bg-white rounded-lg absolute bottom-0 right-0 mb-3 mr-3 border-2 cursor-pointer shadow-lg'>

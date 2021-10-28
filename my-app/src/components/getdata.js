@@ -140,7 +140,7 @@ export default function GetData ( type ) {
         var showevents = []
 
         let sortedmydata = mydata.sort((a, b) => (a.id < b.id ? 1 : -1));
-        console.log(sortedmydata);
+        // console.log(sortedmydata);
 
         if(sortedmydata.length > 1){
             for (let index = 0; index < 6; index++) {

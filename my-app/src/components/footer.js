@@ -14,7 +14,7 @@ function Footer() {
                 {/* <i className='fas fa-envelope'></i> */}
                 <div className='w-4/5 lg:text-left text-center'>
                   <p>B-7/331 Near Ghazi Chowk Jaffar Tayyar Society Malir Karachi</p>
-                  <p>Email: jaffartayyarlibrary@outlook.com</p>
+                  <p>Email: jaffaretayyarlibrary@outlook.com</p>
                   <p><i className='fab fa-whatsapp'></i>  +923172486365</p>
                 </div>
               </div>
@@ -39,7 +39,7 @@ function Footer() {
                 <div className='flex flex-row text-2xl mt-2'>
                     <a target="_blank" href="https://www.facebook.com/Jaffaretayyarlibraryofficial"><i class="fab fa-facebook mr-2"></i></a> 
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=923172486365"><i class="fab fa-whatsapp mr-2"></i></a>
-                    <a href="mailto:jaffartayyarlibrary@outlook.com"><i class="fas fa-envelope mr-2"></i></a>
+                    <a href="mailto:jaffaretayyarlibrary@outlook.com"><i class="fas fa-envelope mr-2"></i></a>
                   </div>
                 <div className='w-3/5 bg-white border-2 cursor-pointer shadow-lg mt-4'>
                   <div className='relative pl-2 pr-8 py-2'>
