@@ -2,6 +2,7 @@ import React from 'react';
 import Book from './book';
 import Service from './service';
 import Event from '../components/event';
+import Course from '../components/course';
 import firebase from "firebase";
 import { useHistory } from "react-router";
 
@@ -47,6 +48,11 @@ export default function GetData ( type ) {
         } 
         if (type === 'showevents' || type === 'showallevents' || type === 'showSeminar' || type === 'showcourses' || type === 'showCompet' || type === 'book-stalls' ){
             firebase.database().ref('allEvents/').on('value', (snapshot) => {
+                setmydata(snapshot.val());
+            });
+        }
+        if (type === 'showCurrentCourses' || type === 'showPastCourses' || type === 'showUpcomingCourses'){
+            firebase.database().ref('courses/').on('value', (snapshot) => {
                 setmydata(snapshot.val());
             });
         }
@@ -281,6 +287,62 @@ export default function GetData ( type ) {
         })
 
         return kitabShanasi;
+    }
+
+
+    //Knowledge Gateway
+
+    if ( type === 'showCurrentCourses') {
+
+        var courses = []
+
+        let sortedmydata = mydata.sort((a, b) => (a.id < b.id ? 1 : -1));
+        sortedmydata = sortedmydata.filter(x => x.type === 'current')
+
+        sortedmydata.forEach((item) => {
+        
+            courses.push(
+                <Course type='detailed' imageUrl={item.imageUrl} course_name={item.course_name} start_date={item.start_date} end_date={item.end_date} course_desc={item.course_desc} instructor={item.instructor} instructor_desc={item.instructor_desc} contact={item.contact} organiser={item.organiser} duration={item.duration} status={item.status} form_link={item.form_link}/>
+            )
+        })
+
+        return courses;
+    }
+
+    if ( type === 'showPastCourses') {
+
+        var courses = []
+
+        let sortedmydata = mydata.sort((a, b) => (a.id < b.id ? 1 : -1));
+        sortedmydata = sortedmydata.filter(x => x.type === 'past')
+        console.log(mydata);
+        console.log(sortedmydata);
+
+        sortedmydata.forEach((item) => {
+        
+            courses.push(
+            <Course type='detailed' imageUrl={item.imageUrl} course_name={item.course_name} start_date={item.start_date} end_date={item.end_date} course_desc={item.course_desc} instructor={item.instructor} instructor_desc={item.instructor_desc} contact={item.contact} organiser={item.organiser} duration={item.duration} status={item.status} form_link={item.form_link}/>
+            )
+        })
+
+        return courses;
+    }
+
+    if ( type === 'showUpcomingCourses') {
+
+        var courses = []
+
+        let sortedmydata = mydata.sort((a, b) => (a.id < b.id ? 1 : -1));
+        sortedmydata = sortedmydata.filter(x => x.type === 'upcoming')
+
+        sortedmydata.forEach((item) => {
+        
+            courses.push(
+                <Course type='detailed' imageUrl={item.imageUrl} course_name={item.course_name} start_date={item.start_date} end_date={item.end_date} course_desc={item.course_desc} instructor={item.instructor} instructor_desc={item.instructor_desc} contact={item.contact} organiser={item.organiser} duration={item.duration} status={item.status} form_link={item.form_link}/>
+            )
+        })
+
+        return courses;
     }
 
 };

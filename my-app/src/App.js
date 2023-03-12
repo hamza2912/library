@@ -5,6 +5,7 @@ import ShowEvents from './pages/showevents';
 import Publications from './pages/publications';
 import View from './pages/view';
 import Onlinepdf from './pages/onlinepdf';
+import KnowledgeGateway from './pages/gateway';
 import './firebase';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
       <Switch>
 
+      <Route path="/knowledge-gateway" component={KnowledgeGateway} />
       <Route path="/events" component={ShowEvents} />
       <Route path="/publications" component={Publications} />
       <Route path="/view" component={View} />
