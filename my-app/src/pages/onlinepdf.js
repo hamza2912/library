@@ -8,7 +8,7 @@ function Onlinepdf() {
         <div>
             <Sidebar />
             <div className='w-full h-auto lg:pl-20 lg:py-12 py-24'>
-                <h2 className='text-center text-lg font-medium mb-6'>Online PDFs Groups</h2>
+                <h2 className='text-center text-lg font-medium mb-6'>Online PDF Books</h2>
                 <div className='grid lg:grid-cols-4 grid-cols-2 gap-8 lg:px-10 px-5 font-jameel'>
                     <a href="https://drive.google.com/drive/folders/1s6jJFeKBoe6MVhVScVu9ArgPsrQ1ymFH?usp=sharing" target="_blank">
                         <div className='p-4 bg-search flex flex-col items-center rounded-lg'>
@@ -128,6 +128,12 @@ function Onlinepdf() {
                         <div className='p-4 bg-search flex flex-col items-center text-center rounded-lg'>
                             <i class="fas fa-file-pdf text-4xl text-red-400 mb-2"></i>
                             <p className='text-xl'>متفرقات</p>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1b4gCEO1AjdO61HCy2DIqZYGtJMw1V7zG?usp=sharing" target="_blank">
+                        <div className='p-4 bg-search flex flex-col items-center text-center rounded-lg'>
+                            <i class="fas fa-file-pdf text-4xl text-red-400 mb-2"></i>
+                            <p className='text-xl'>Preliminary Exams Papers 2023</p>
                         </div>
                     </a>
                     

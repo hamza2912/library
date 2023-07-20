@@ -5,7 +5,7 @@ import GetData from '../components/getdata';
 
 function KnowledgeGateway() {
 
-    const [courseType, setcourseType] = React.useState("current");
+    const [courseType, setcourseType] = React.useState("upcoming");
     const current = React.useRef(null);
     const past = React.useRef(null);
     const upcoming = React.useRef(null);
